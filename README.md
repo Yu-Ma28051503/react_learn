@@ -18,7 +18,7 @@ npx create-react-app <プロジェクト名>
 ```[bash]
 npm start
 ```
-webブラウザでReactのロゴが回っている画面が出れば準備OK(localhost:3000)
+webブラウザでReactのロゴが回っている画面が出れば環境構築はOK(localhost:3000)
 
 4. 不要なコードやファイルは消去しておく
 
@@ -31,7 +31,9 @@ webブラウザでReactのロゴが回っている画面が出れば準備OK(loc
 - App.jsの`clasName='App'`内のコード
 - index.jsの`import reportWebVitals from './reportWebVitals';`
 - index.jsの14~17行目
+- App.cssの中身を全て消去
 
+5. App.jsを編集してアプリを作っていく！
 
 ## ToDoリスト
 
