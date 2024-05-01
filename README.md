@@ -38,6 +38,27 @@ webブラウザでReactのロゴが回っている画面が出れば環境構築
 ## ToDoリスト
 
 
+## memo
+### 新しくコンポーネントを作成するとき
+1. VSCodeの拡張機能「ES7+ React/Redux/React-Native snip」をインストール
+2. <component name>.jsを作成
+3. `rafce`と入力して補完されるものを使う
+4. 次のコードが作成される
+```
+import React from 'react'
+
+const component_name = () => {
+  return (
+    <div>component_name</div>
+  )
+}
+
+export default component_name
+```
+
+5. App.jsに`import component_name from ./component_name`を追加する
+
+
 ## 参考
 - [【React入門】完全初心者OK! 1から簡単なToDoアプリを作ってReactの一歩を踏み出してみよう ~Reactチュートリアル~](https://youtu.be/nRCNL9T3J98?si=ebt7RYN4rS107ZJz)
 - [React公式](https://ja.react.dev/)
