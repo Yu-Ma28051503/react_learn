@@ -58,8 +58,31 @@ export default component_name
 
 5. App.jsに`import component_name from ./component_name`を追加する
 
+### Tailwind
+Reactに適しているCSSフレームワーク
+
+インストール
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+postcss.config.jsとtailwind.config.cssが作成される．
+
+tailwind.config.jsのcontentを編集して反映させる
+`content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],`
+
+./index.cssに次を追記
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+divタグやh1タグなどに`classNmae=""`をつけて反映させる
 
 ## 参考
 - [【React入門】完全初心者OK! 1から簡単なToDoアプリを作ってReactの一歩を踏み出してみよう ~Reactチュートリアル~](https://youtu.be/nRCNL9T3J98?si=ebt7RYN4rS107ZJz)
 - [React公式](https://ja.react.dev/)
-
+- [【React】ReactアプリにTailwind Cssを導入する手順](https://qiita.com/y_kato_eng/items/439dae65ba13d050c91e)
+- [tailwindcss](https://tailwindcss.com/)
