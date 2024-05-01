@@ -79,7 +79,7 @@ tailwind.config.jsのcontentを編集して反映させる
 @tailwind utilities;
 ```
 
-divタグやh1タグなどに`classNmae=""`をつけて反映させる
+divタグやh1タグなどに`class=""`をつけて反映させる
 
 ## 参考
 - [【React入門】完全初心者OK! 1から簡単なToDoアプリを作ってReactの一歩を踏み出してみよう ~Reactチュートリアル~](https://youtu.be/nRCNL9T3J98?si=ebt7RYN4rS107ZJz)

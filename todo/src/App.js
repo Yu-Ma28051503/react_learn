@@ -40,12 +40,32 @@ function App() {
 
   return (
     <div>
-      <h1>ToDo App</h1>
-      <input type="text" ref={todoNameRef} />
-      <button onClick={handleAddTodo}>タスクの追加</button>
-      <button onClick={handleDeleteTodo}>タスクの消去</button>
-      <div>残りのタスク数: {todos.filter((todo) => !todo.completed).length}</div>
-      <ToDoList todos={todos} toggleTodo={toggleTodo}/>
+      <h1 className="text-3xl font-bold">ToDo App</h1>
+      <br />
+      <input
+        type="text"
+        ref={todoNameRef}
+        className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+        placeholder="ToDo"
+      />
+      <div className='flex'>
+        <button
+          onClick={handleAddTodo} 
+          className='block w-full rounded-md border-0 mx-2 py-1.5 text-white bg-sky-500 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'>
+            タスクの追加
+        </button>
+        <button
+          onClick={handleDeleteTodo}
+          className='block w-full rounded-md border-0 py-1.5 text-white bg-sky-500 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'>
+            タスクの消去
+        </button>
+      </div>
+      <div className=''>
+        残りのタスク数: {todos.filter((todo) => !todo.completed).length}
+      </div>
+      <div className='flex flex-col'>
+        <ToDoList todos={todos} toggleTodo={toggleTodo}/>
+      </div>
     </div>
   );
 }

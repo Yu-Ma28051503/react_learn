@@ -8,9 +8,18 @@ const ToDo = ({ todo, toggleTodo }) => {
     return (
         <div>
             <label>
-                <input type="checkbox" checked={todo.completed} readOnly onChange={handleTodoClick}/>
+                <input
+                    type="checkbox"
+                    checked={todo.completed}
+                    readOnly
+                    onChange={handleTodoClick}
+                    className='group inline-flex focus:outline-none'    
+                />
+                <span className='text-center box-decoration-slice box-border'>
+                    {todo.name}
+                </span>
             </label>
-            {todo.name}
+            
         </div>
     )
 }
