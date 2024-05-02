@@ -13,7 +13,7 @@ const ToDo = ({ todo, toggleTodo }) => {
                     checked={todo.completed}
                     readOnly
                     onChange={handleTodoClick}
-                    className='group inline-flex focus:outline-none'    
+                    className='accent-cyan-500 rounded-full'    
                 />
                 <span className='text-center box-decoration-slice box-border'>
                     {todo.name}

@@ -3,6 +3,9 @@
 
 
 ## Reactを始めるにあたっての手順
+
+### npx create-ract-appを使う手順
+
 1. Node.jsが入っているか確認する
 ```[bash]
 $ node -v
@@ -34,6 +37,29 @@ webブラウザでReactのロゴが回っている画面が出れば環境構築
 - App.cssの中身を全て消去
 
 5. App.jsを編集してアプリを作っていく！
+
+### viteを使う手順
+こっちの方が早く作成できる
+
+1. プロジェクト作成
+次のコマンドを実行
+```
+npm craete vite@latest <プロジェクト名>
+```
+
+2. 使うフレームワークを選択する
+reactを選択
+![image](./select-framework.png)
+
+3. 必要なモジュールをインストールする
+```
+npm i
+```
+
+4. 立ち上げる
+```
+npm run dev
+```
 
 ## ToDoリスト
 
@@ -86,3 +112,4 @@ divタグやh1タグなどに`class=""`をつけて反映させる
 - [React公式](https://ja.react.dev/)
 - [【React】ReactアプリにTailwind Cssを導入する手順](https://qiita.com/y_kato_eng/items/439dae65ba13d050c91e)
 - [tailwindcss](https://tailwindcss.com/)
+- [【React入門】](https://youtu.be/uuAdVs7sbAs?si=ncF5AZJhDkdNX6ua)
